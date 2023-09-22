@@ -1,7 +1,7 @@
 body {
 	/* background-image: linear-gradient(to bottom, #101010, rgb(131, 126, 126)); */
 	background-image: url("main/bgimg.svg");
-	background-color: rgb(24, 24, 24);
+	background-color: rgba(24, 24, 24, 0.966);
 	background-size: cover;
 	min-height: 1080px;
 	color: rgb(218, 206, 206);
@@ -67,6 +67,15 @@ body {
 	padding: 3px;
 	text-align: center;
 }
+.centerhodinka {
+	margin-left: auto;
+	margin-top: 1px;
+	background-color: rgba(45, 7, 7, 0.41);
+	margin: absolute;
+	border-radius: 8px;
+	padding: 8px;
+	text-align: center;
+}
 .center_no_border {
 	margin: auto;
 	text-align: center;
@@ -106,18 +115,19 @@ body {
 	display: block;
 }
 .hranica {
-	margin-left: 250px;
-	position: absolute;
-	background-color: rgba(47, 47, 47, 0.41);
+	margin-left: center;
+	position: relative;
+	background-color: rgba(45, 7, 7, 0.41);
 	border-color: blue;
 	border: blue;
-	border-radius: 8px;
+	border-radius: 1px;
 }
 .hranica1 {
-	margin-left: 450px;
-	position: absolute;
-	background-color: rgba(47, 47, 47, 0.41);
+	margin-top: auto;
+	margin-left: center;
+	position: relative;
+	background-color: rgba(45, 7, 7, 0.41);
 	border-color: blue;
 	border: blue;
-	border-radius: 8px;
+	border-radius: 1px;
 }

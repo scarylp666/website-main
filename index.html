@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="main/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="main/dns_FILL0_wght400_GRAD0_opsz48.ico" />
+		<title>Domov</title>
+	</head>
+	<body>
+		<!-- <div id="gradiant"></div> -->
+		<!-- <h2>This is my project about weather</h2> -->
+		<!-- <p class="maintext">It is in development stage</p> -->
+		<!-- <p class="maintext1">This is just a test component</p> -->
+		<div id="phinis" class="dropdown">
+			<button class="material-symbols-outlined">widgets</button>
+			<div class="dropdown-content">
+				<a class="center" href="/todosite.php">To Do List</a>
+				<a class="center" href="http://192.168.1.232:9987">Ad Guard</a>
+				<a class="center" href="http://192.168.1.100">Detska Izba - Svetla</a>
+			</div>
+		</div>
+		<div class="center">
+			<span class="material-symbols-outlined"> watch </span>
+			<span id="clockbox"></span>
+		</div>
+
+		<script type="text/javascript" src="main/js/hodiny.js"></script>
+		<div class="center_no_border">
+			<img id="image" src="main/test.png" />
+			<span src="main/css/style.css" id=".temp"></span>
+			<script src="main/js/output.js"></script>
+			<!-- <button type="button" class="button" onclick="show()" id="btnID">
+				Show Image
+			</button> -->
+			<script src="main/js/updating.js"></script>
+		</div>
+		<br />
+		<div class="hranica">
+			<p class="center">Hlavna Stanica</p>
+			<div class="center">
+				<span class="material-symbols-outlined" style="font-size: 20px"
+					>device_thermostat</span
+				>
+				<span>:</span>
+				<span id="temperature"></span>
+				<span>&deg;C</span>
+			</div>
+			<div class="center">
+				<span class="material-symbols-outlined"> humidity_percentage </span>
+				<span>: </span>
+				<span id="humidity"></span>
+				<span>%</span>
+			</div>
+			<div class="center">
+				<span class="material-symbols-outlined"> history </span>
+				<span>: </span>
+				<span id="timestamp"></span>
+			</div>
+			<div class="center">
+				<span class="material-symbols-outlined"> cloudy_snowing </span>
+				<span>: </span>
+				<span id="Rain"></span>
+			</div>
+			<div class="center">
+				<span class="material-symbols-outlined"> air </span>
+				<span>: </span>
+				<span id="Speed"></span>
+			</div>
+		</div>
+		<div class="hranica1">
+			<script src="main/js/izba.js"></script>
+			<p class="center">Detska Izba</p>
+			<div class="center">
+				<span class="material-symbols-outlined" style="font-size: 20px"
+					>device_thermostat</span
+				>
+				<span>:</span>
+				<span id="TemperatureIzba"></span>
+				<span>&deg;C</span>
+			</div>
+			<div class="center">
+				<span class="material-symbols-outlined"> humidity_percentage </span>
+				<span>: </span>
+				<span id="HumidityIzba"></span>
+				<span>%</span>
+			</div>
+			<div class="center">
+				<span class="material-symbols-outlined"> history </span>
+				<span>: </span>
+				<span id="timestamp1"></span>
+			</div>
+		</div>
+	</body>
+</html>

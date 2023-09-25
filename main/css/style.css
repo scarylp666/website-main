@@ -67,6 +67,13 @@ body {
 	padding: 3px;
 	text-align: center;
 }
+.centernadpis {
+	font-weight: bolder;
+	margin: relative;
+	margin-top: 10px;
+	padding: 2px;
+	text-align: center;
+}
 .centerhodinka {
 	margin-left: auto;
 	margin-top: 1px;

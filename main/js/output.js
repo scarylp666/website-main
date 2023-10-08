@@ -12,6 +12,7 @@ function get_weather_data() {
 		document.getElementById("timestamp1").innerHTML = weather_data["Time1"];
 		document.getElementById("Rain").innerHTML = weather_data["Rain"];
 		document.getElementById("Speed").innerHTML = weather_data["Speed"];
+		document.getElementById("pressure").innerHTML = weather_data["pressure"];
 	};
 	xhttp.open("GET", "main/weather_data.json");
 	xhttp.send();

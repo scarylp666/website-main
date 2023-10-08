@@ -6,5 +6,6 @@
 	"Speed": "15Km/h",
 	"Temperature1": 26.7,
 	"Humidity1": 58,
-	"Time1": "13-11-2022 16:45:31"
+	"Time1": "13-11-2022 16:45:31",
+	"pressure": 1027.4
 }

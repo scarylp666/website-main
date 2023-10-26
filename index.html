@@ -25,12 +25,10 @@
 				<a class="center" href="http://192.168.1.100">Detska Izba - Svetla</a>
 			</div>
 		</div>
-		<h1 class="centernadpis1">The main station</h1>
 		<div class="centerhodinka">
 			<!-- <span class="material-symbols-outlined"> watch </span> -->
 			<h2 id="clockbox"></h2>
 		</div>
-
 		<script type="text/javascript" src="main/js/hodiny.js"></script>
 		<div class="center_no_border">
 			<img id="image" src="main/test.png" />
@@ -42,7 +40,7 @@
 			<script src="main/js/updating.js"></script>
 		</div>
 		<div class="hranica">
-			<p class="center">Vonkajsia Stanica</p>
+			<p class="center">Hlavna Meteostanica OUTSIDE</p>
 			<div class="center">
 				<span class="material-symbols-outlined" style="font-size: 20px"
 					>device_thermostat</span
@@ -83,28 +81,102 @@
 				<span id="timestamp"></span>
 			</div>
 		</div>
-		<div class="hranica1">
-			<script src="main/js/izba.js"></script>
-			<p class="center">Detska Izba</p>
-			<div class="center">
-				<span class="material-symbols-outlined" style="font-size: 20px"
-					>device_thermostat</span
-				>
-				<span>Teplota</span>
-				<span>:</span>
-				<span id="TempreatureIzba"></span>
-				<span>&deg;C</span>
-				<span class="material-symbols-outlined"> humidity_percentage </span>
-				<span>Vlhkost</span>
-				<span>:</span>
-				<span id="HumidityIzba"></span>
-				<span>%</span>
+		<div class="flexbotto">
+			<div class="center1">
+				<script src="main/js/izba.js"></script>
+				<p class="center">Detska Izba</p>
+				<div class="center">
+					<span class="material-symbols-outlined" style="font-size: 20px"
+						>device_thermostat</span
+					>
+					<span>Teplota</span>
+					<span>:</span>
+					<span id="TempreatureIzba"></span>
+					<span>&deg;C</span>
+					<span class="material-symbols-outlined"> humidity_percentage </span>
+					<span>Vlhkost</span>
+					<span>:</span>
+					<span id="HumidityIzba"></span>
+					<span>%</span>
+				</div>
+				<div class="center">
+					<span class="material-symbols-outlined"> history </span>
+					<span>Posledny Snimok</span>
+					<span>: </span>
+					<span id="timestamp1"></span>
+				</div>
 			</div>
-			<div class="center">
-				<span class="material-symbols-outlined"> history </span>
-				<span>Posledny Snimok</span>
-				<span>: </span>
-				<span id="timestamp1"></span>
+			<div class="center1">
+				<p class="center">3D Tlaciaren</p>
+				<div class="center">
+					<span class="material-symbols-outlined" style="font-size: 20px"
+						>device_thermostat</span
+					>
+					<span>Teplota</span>
+					<span>:</span>
+					<span id="Tempreature31"></span>
+					<span>&deg;C</span>
+					<span class="material-symbols-outlined"> humidity_percentage </span>
+					<span>Vlhkost</span>
+					<span>:</span>
+					<span id="Humidity31"></span>
+					<span>%</span>
+				</div>
+				<div class="center">
+					<span class="material-symbols-outlined"> history </span>
+					<span>Posledny Snimok</span>
+					<span>: </span>
+					<span id="timestamp31"></span>
+				</div>
+			</div>
+		</div>
+		<div class="flexbotto">
+			<div class="center1">
+				<script src="main/js/izba.js"></script>
+				<p class="center">Aktivne Filamenty</p>
+				<div class="center">
+					<span class="material-symbols-outlined" style="font-size: 20px"
+						>device_thermostat</span
+					>
+					<span>Teplota</span>
+					<span>:</span>
+					<span id="TempreatureF1"></span>
+					<span>&deg;C</span>
+					<span class="material-symbols-outlined"> humidity_percentage </span>
+					<span>Vlhkost</span>
+					<span>:</span>
+					<span id="HumidityF1"></span>
+					<span>%</span>
+				</div>
+				<div class="center">
+					<span class="material-symbols-outlined"> history </span>
+					<span>Posledny Snimok</span>
+					<span>: </span>
+					<span id="timestampF1"></span>
+				</div>
+			</div>
+			<div class="center1">
+				<p class="center">Filamentovy Sklad</p>
+				<div class="center">
+					<span class="material-symbols-outlined" style="font-size: 20px"
+						>device_thermostat</span
+					>
+					<span>Teplota</span>
+					<span>:</span>
+					<span id="TempreatureF2"></span>
+					<span>&deg;C</span>
+					<span class="material-symbols-outlined"> humidity_percentage </span>
+					<span>Vlhkost</span>
+					<span>:</span>
+					<span id="HumidityF2"></span>
+					<span>%</span>
+				</div>
+				<div class="center">
+					<span class="material-symbols-outlined"> history </span>
+					<span>Posledny Snimok</span>
+					<span>: </span>
+					<span id="timestampF2"></span>
+				</div>
 			</div>
 		</div>
 	</body>

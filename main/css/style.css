@@ -9,6 +9,10 @@ body {
 #image {
 	display: none;
 }
+h1 {
+	position: relative;
+	text-align: center;
+}
 .button {
 	background-color: rgba(215, 221, 225, 0.445);
 	border: none;
@@ -147,5 +151,8 @@ body {
 	background-color: rgba(45, 7, 7, 0.41);
 	border-color: blue;
 	border: blue;
-	border-radius: 1px;
+	border-radius: 6px;
+}
+.centernadpis1 {
+	text-align: center;
 }

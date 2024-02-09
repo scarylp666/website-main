@@ -17,5 +17,5 @@ function get_weather_data() {
 	xhttp.open("GET", "main/weather_data.json");
 	xhttp.send();
 }
-get_weather_data();
-setInterval(get_weather_data, 1000);
+// get_weather_data();
+// setInterval(get_weather_data, 1000);

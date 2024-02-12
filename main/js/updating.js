@@ -26,9 +26,17 @@ function fetchDataAndUpdate() {
 				// Assuming the timestamp is the same for temperature and humidity
 			}
 
-			// Rack Data
-			// ... (you would continue in the same pattern for Rack, 3D Printer, etc.)
-
+			if (data["Rack_humidity"]) {
+				document.getElementById("HumidityR").innerText =
+					data["Rack_humidity"].value;
+				document.getElementById("timestampR").innerText =
+					data["Rack_humidity"].timestamp;
+			}
+			if (data["Rack_temperature"]) {
+				document.getElementById("TempreatureR").innerText =
+					data["Rack_temperature"].value;
+				// Assuming the timestamp is the same for temperature and humidity
+			}
 			// 3D Printer
 			if (data["3D printer_humidity"]) {
 				document.getElementById("Humidity31").innerText =

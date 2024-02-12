@@ -24,7 +24,7 @@ def fetch_latest_data():
     query = '''
     from(bucket: "weather_data")
      |> range(start: -30d)
-     |> filter(fn: (r) => r["_measurement"] == "Izba Data" or r["_measurement"] == "3D printer")
+     |> filter(fn: (r) => r["_measurement"] == "Rack" or r["_measurement"] == "Izba Data" or r["_measurement"] == "3D printer")
      |> last()
     '''
     results = client.query_api().query(org=INFLUXDB_ORG, query=query)

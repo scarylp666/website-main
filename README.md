@@ -31,5 +31,5 @@ Feel free to fork the repository and submit pull requests. For major changes, pl
 
 ## License
 
-This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
+I dont know anything about this stuff, use it as you wish
 

@@ -49,7 +49,28 @@ function fetchDataAndUpdate() {
 					data["3D printer_temperature"].value;
 				// Assuming the timestamp is the same for temperature and humidity
 			}
-
+			if (data["Aktivne Filamenty_humidity"]) {
+				document.getElementById("HumidityF1").innerText =
+					data["Aktivne Filamenty_humidity"].value;
+				document.getElementById("timestampF1").innerText =
+					data["Aktivne Filamenty_humidity"].timestamp;
+			}
+			if (data["Aktivne Filamenty_temperature"]) {
+				document.getElementById("TempreatureF1").innerText =
+					data["Aktivne Filamenty_temperature"].value;
+				// Assuming the timestamp is the same for temperature and humidity
+			}
+			if (data["Filamentovy sklad_humidity"]) {
+				document.getElementById("HumidityF2").innerText =
+					data["Filamentovy sklad_humidity"].value;
+				document.getElementById("timestampF2").innerText =
+					data["Filamentovy sklad_humidity"].timestamp;
+			}
+			if (data["Filamentovy sklad_temperature"]) {
+				document.getElementById("TempreatureF2").innerText =
+					data["Filamentovy sklad_temperature"].value;
+				// Assuming the timestamp is the same for temperature and humidity
+			}
 			// ... Repeat for each section/division you have on your webpage
 		})
 		.catch((error) => console.error("Error fetching data:", error));

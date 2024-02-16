@@ -7,7 +7,7 @@ function show() {
 }
 
 function fetchDataAndUpdate() {
-	fetch("http://10.8.0.112:5001/") // Make sure to include the correct endpoint '/latest'
+	fetch("IP_of_the_server") // Make sure to include the correct endpoint '/latest'
 		.then((response) => response.json())
 		.then((data) => {
 			// Update the elements with the data received from the server

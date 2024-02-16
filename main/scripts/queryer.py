@@ -10,10 +10,10 @@ app = Flask(__name__)
 CORS(app)
 
 # InfluxDB Connection Details
-INFLUXDB_URL = 'http://10.8.0.112:8086'
-INFLUXDB_TOKEN = 'PSzkq4Kj-erHQ_CCB-DVIKWS-egHbAzZYrQrqyBPKAluIH-4ot8QqE2PVm8As4alczc6JdttrkRzzXAXFuYRJQ=='
-INFLUXDB_ORG = '47d5415d787e96ce'
-INFLUXDB_BUCKET = 'weather_data'
+INFLUXDB_URL = 'IP_of_the_server'
+INFLUXDB_TOKEN = 'Your influxDB token'
+INFLUXDB_ORG = 'Your influxDB org id'
+INFLUXDB_BUCKET = 'Your bucket name'
 
 client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)
 
@@ -22,7 +22,7 @@ data = {}  # Initialize an empty dictionary to store the latest data
 def fetch_latest_data():
     global data
     query = '''
-    from(bucket: "weather_data")
+    from(bucket: "Your bucket name")
      |> range(start: -30d)
      |> filter(fn: (r) => r["_measurement"] == "Rack" or r["_measurement"] == "Izba Data" or r["_measurement"] == "3D printer")
      |> last()
